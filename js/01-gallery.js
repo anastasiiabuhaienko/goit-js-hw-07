@@ -7,11 +7,11 @@ import { galleryItems } from './gallery-items.js';
 // 1.Создание и рендер разметки по массиву данных galleryItems и предоставленному шаблону элемента галереи.
 
 const galleryContainer = document.querySelector('.gallery');
-const galleryMarkup = createGalleryImage(galleryItems);
+const galleryMarkup = createGalleryCard(galleryItems);
 
 galleryContainer.insertAdjacentHTML('beforeend', galleryMarkup)
 
-function createGalleryImage(galleryItems) {
+function createGalleryCard(galleryItems) {
 
     return galleryItems.map(({ preview, original, description }) => {
         return `
